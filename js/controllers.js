@@ -3,35 +3,101 @@ angular.module('redditCloneApp')
     $scope.add = {};
     $scope.article = {};
     $scope.comment = {};
-    $scope.articles = [
-      {
-        title: 'Alaska: the Last Frontier',
-        author: 'Alex',
-        description: 'Alaska lorem ipsum',
-        date: "2016-05-06T22:27:48.035Z",
-        image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjqkIMiBBQqIIxK-MVoQIS0TF2peYDnSs-RBGdvvaUfn68TTvSJg',
-        rating: 4,
-        comments: []
-      },
-      {
-        title: 'Deadliest Catch',
-        author: 'Dan',
-        date: "2014-01-09T22:27:48.035Z",
-        description: 'Deadly lorem ipsum',
-        image: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeror9_1prRononbuqjY5THMIFawRjuA0aFgf0vjd7ZXpK1DjiZQ',
-        rating: 2,
-        comments: []
-      },
-      {
-        title: 'Dr.Pol',
-        author: 'Perry',
-        date: "2015-10-03T22:27:48.035Z",
-        description: 'vet lorem ipsum',
-        image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlxsE_kENW1Pevu8EZQzYEB-MkQDIWVvknxXHyFA83YoBIGRdCdg',
-        rating: 7,
-        comments: []
-      }
-    ];
+    $scope.articles = [{
+  "_id": "571cfdda2890ad1100116322",
+  "username": "shellysmith",
+  "email": "shelly@smith.com",
+  "password": "$2a$10$v5etyD1GnHeShG68VGo8cedH1NL/oyBjPEs3OIMK7aaARf2/wmsgu",
+  "dob": "1975-12-12T07:00:00.000Z",
+  "slug": "shellysmith",
+  "__v": 0,
+  "_matches": [
+    "571cfd532890ad1100116321"
+  ],
+  "interestedIn": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "gender": 0,
+  "address": {
+    "geo": {
+      "lat": 35,
+      "lng": 44
+    }
+  },
+  "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/fronx/128.jpg",
+  "names": {
+    "firstName": "Shelly",
+    "lastName": "Smith"
+  },
+  "admin": false,
+  "active": true
+},
+{
+  "_id": "571cfd532890ad1100116321",
+  "username": "stevebaker",
+  "email": "steve@baker.com",
+  "password": "$2a$10$gNN19E6RdfCSFM0RIj/uUehnryPDypiZEVnPnZmZd5M2FSh4pWffO",
+  "dob": "1983-12-12T07:00:00.000Z",
+  "slug": "stevebaker",
+  "__v": 0,
+  "_matches": [],
+  "interestedIn": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "gender": 0,
+  "address": {
+    "geo": {
+      "lat": 23,
+      "lng": 25
+    }
+  },
+  "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/fronx/128.jpg",
+  "names": {
+    "firstName": "Steve",
+    "lastName": "Baker"
+  },
+  "admin": false,
+  "active": true
+},
+{
+  "_id": "571cf6162890ad1100116320",
+  "username": "ginadebell",
+  "email": "gina@debell.com",
+  "password": "$2a$10$aQMXho4nnVkw9SzyMMr9.eahZk4GlUJep2iO3NQCQU52NeLwBMfwW",
+  "dob": "1964-11-11T07:00:00.000Z",
+  "slug": "ginadebell",
+  "__v": 0,
+  "_matches": [
+    "57193afcf9c52e1100f8e1aa"
+  ],
+  "interestedIn": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "gender": 0,
+  "address": {
+    "geo": {
+      "lat": 58,
+      "lng": 57
+    }
+  },
+  "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/fronx/128.jpg",
+  "names": {
+    "firstName": "Gina",
+    "lastName": "Debell"
+  },
+  "admin": false,
+  "active": true
+}];
+
     $scope.add.addArticle = function () {
       $scope.articles.push({
         title: $scope.article.title,
