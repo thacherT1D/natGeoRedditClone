@@ -1,4 +1,4 @@
-angular.module('redditCloneApp')
+angular.module('NatGeoReddit')
   .controller('MainCtrl', function ($scope, $rootScope) {
     $scope.add = {};
     $scope.article = {};

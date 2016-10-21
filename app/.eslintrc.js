@@ -1,8 +1,7 @@
 module.exports = {
   extends: [
     'ryansobol/browser',
-    'ryansobol/es6',
-    'ryansobol/react'
+    'ryansobol/es6'
   ],
 
   parserOptions: {
